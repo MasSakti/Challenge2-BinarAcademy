@@ -1,6 +1,6 @@
 # Chapter2-Challenge2
 
-<img src="app/src/main/res/drawable/logo.png" align="left"
+<img src="logo.png" align="left"
 width="250" hspace="10" vspace="10">
 
 ## About
