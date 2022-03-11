@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/it_rekomendasi"
+        android:title="@string/rekomendasi"
+        android:icon="@drawable/ic_like"/>
+
+    <item
+        android:id="@+id/it_feed"
+        android:title="@string/feed"
+        android:icon="@drawable/ic_feed"/>
+
+    <item
+        android:id="@+id/it_live"
+        android:title="@string/live"
+        android:icon="@drawable/ic_live"/>
+    <item
+        android:id="@+id/it_notifikasi"
+        android:title="@string/notif"
+        android:icon="@drawable/ic_notif"/>
+    <item
+        android:id="@+id/it_saya"
+        android:title="@string/saya"
+        android:icon="@drawable/ic_saya"/>
+
+</menu>

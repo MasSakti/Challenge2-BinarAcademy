@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/round_yellow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rectangle_search"
+            android:drawableLeft="@drawable/ic_search"
+            android:drawableRight="@drawable/ic_outline_camera_alt_24"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="6dp"
+            android:text=" Celana Olahraga Pria Pendek "
+            android:textColor="#df5a26"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_baseline_shopping_cart_24"
+            app:layout_constraintBottom_toBottomOf="@id/etSearch"
+            app:layout_constraintLeft_toRightOf="@id/etSearch"
+            app:layout_constraintTop_toTopOf="@id/etSearch" />
+
+        <ImageView
+            android:id="@+id/ivChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_outline_chat_24"
+            app:layout_constraintBottom_toBottomOf="@id/ivCart"
+            app:layout_constraintLeft_toRightOf="@id/ivCart"
+            app:layout_constraintTop_toTopOf="@id/ivCart" />
+
+        <ImageView
+            android:id="@+id/ivPromo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/bonus1"
+            app:layout_constraintLeft_toLeftOf="@id/etSearch"
+            app:layout_constraintTop_toBottomOf="@id/etSearch" />
+
+        <ImageView
+            android:id="@+id/ivPromo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/bonus2"
+            app:layout_constraintBottom_toBottomOf="@id/ivPromo1"
+            app:layout_constraintLeft_toRightOf="@id/ivPromo1"
+            app:layout_constraintTop_toTopOf="@id/ivPromo1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header_shoppepay"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/round_white"
+        app:layout_constraintTop_toBottomOf="@id/header_constraint">
+
+        <ImageView
+            android:id="@+id/ivScan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_outline_qr_code_scanner_24"
+            app:layout_constraintBottom_toBottomOf="@+id/header_shoppepay"
+            app:layout_constraintLeft_toLeftOf="@+id/header_shoppepay"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvSaldo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:drawableLeft="@drawable/ic_outline_account_balance_wallet_24_orange"
+            android:paddingTop="35dp"
+            android:text="  Rp16.000"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/ivScan"
+            app:layout_constraintLeft_toRightOf="@id/ivScan"
+            app:layout_constraintTop_toTopOf="@+id/ivScan" />
+
+        <TextView
+            android:id="@+id/tvSaldo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Isi Saldo ShoppePay"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toLeftOf="@id/tvSaldo"
+            app:layout_constraintTop_toBottomOf="@+id/tvSaldo" />
+
+        <TextView
+            android:id="@+id/tvCoin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="35dp"
+            android:drawableLeft="@drawable/ic_coin"
+            android:paddingTop="30dp"
+            android:text="  5 Koin"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/ivScan"
+            app:layout_constraintLeft_toRightOf="@id/tvSaldo"
+            app:layout_constraintTop_toTopOf="@+id/ivScan" />
+
+        <TextView
+            android:id="@+id/tvCoin2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Klaim Koin Disini"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toLeftOf="@id/tvCoin"
+            app:layout_constraintTop_toBottomOf="@+id/tvCoin" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvDeal"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginRight="5dp"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/header_shoppepay"
+        app:layout_constraintRight_toRightOf="@+id/header_shoppepay"
+        app:layout_constraintTop_toBottomOf="@+id/header_shoppepay">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/shoppe_deal" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvMall"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:clickable="true"
+        android:padding="0dp"
+        app:layout_constraintRight_toLeftOf="@+id/cvDeal"
+        app:layout_constraintTop_toBottomOf="@+id/header_shoppepay">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/shoppe_mall" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvMarket"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:clickable="true"
+        android:padding="0dp"
+        app:layout_constraintRight_toLeftOf="@+id/cvMall"
+        app:layout_constraintTop_toBottomOf="@+id/header_shoppepay">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/shoppe_market" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvPulsa"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:clickable="true"
+        android:padding="0dp"
+        app:layout_constraintRight_toLeftOf="@+id/cvMarket"
+        app:layout_constraintTop_toBottomOf="@+id/header_shoppepay">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/shoppe_pulsa" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvPeduli"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:clickable="true"
+        android:padding="0dp"
+        app:layout_constraintRight_toLeftOf="@+id/cvPulsa"
+        app:layout_constraintTop_toBottomOf="@+id/header_shoppepay">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/shoppe_peduli" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvVoucher"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:clickable="true"
+        android:padding="0dp"
+        app:layout_constraintRight_toRightOf="@+id/cvPeduli"
+        app:layout_constraintTop_toBottomOf="@+id/cvPeduli">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/shoppe_voucher" />
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvGames"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:clickable="true"
+        android:padding="0dp"
+        app:layout_constraintRight_toRightOf="@+id/cvPulsa"
+        app:layout_constraintTop_toBottomOf="@+id/cvPulsa">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/shoppe_games" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvBayar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:clickable="true"
+        android:padding="0dp"
+        app:layout_constraintRight_toRightOf="@+id/cvMarket"
+        app:layout_constraintTop_toBottomOf="@+id/cvMarket">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/shoppe_bayar" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvFood"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:clickable="true"
+        android:padding="0dp"
+        app:layout_constraintRight_toRightOf="@+id/cvMall"
+        app:layout_constraintTop_toBottomOf="@+id/cvMall">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/shoppe_food" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvSeribu"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:clickable="true"
+        android:padding="0dp"
+        app:layout_constraintRight_toRightOf="@+id/cvDeal"
+        app:layout_constraintTop_toBottomOf="@+id/cvDeal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/shoppe_seribu" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/promoteCard"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/cvGames">
+
+
+        <ImageView
+            android:id="@+id/ivPromote1"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/promote1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivPromote2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/promote2"
+            app:layout_constraintBottom_toBottomOf="@id/ivPromote1"
+            app:layout_constraintLeft_toRightOf="@id/ivPromote1"
+            app:layout_constraintTop_toTopOf="@id/ivPromote1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/flashSale"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        app:layout_constraintTop_toBottomOf="@id/promoteCard">
+
+        <ImageView
+            android:id="@+id/ivFlash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/flash"
+            app:layout_constraintBottom_toBottomOf="@+id/flashSale"
+            app:layout_constraintLeft_toLeftOf="@+id/flashSale"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tvLainnya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:drawableRight="@drawable/ic_baseline_arrow_forward_ios_24"
+            android:gravity="center"
+            android:text="Lihat Lainnya"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivFlash"
+            app:layout_constraintLeft_toRightOf="@id/ivFlash"
+            app:layout_constraintTop_toTopOf="@+id/ivFlash" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvFlash1"
+        android:layout_width="135dp"
+        android:layout_height="180dp"
+        android:layout_marginRight="5dp"
+        android:clickable="true"
+        app:layout_constraintLeft_toLeftOf="@+id/flashSale"
+        app:layout_constraintRight_toRightOf="@+id/flashSale"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flashSale">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/smarthwatch" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvDesc1"
+        android:layout_width="135dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="5dp"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="@+id/cvFlash1"
+        app:layout_constraintTop_toBottomOf="@+id/cvFlash1">
+
+        <TextView
+            android:id="@+id/Price1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Rp62.500"
+            android:textColor="#df5a26"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/Bar1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:indeterminate="false"
+            android:progress="20"
+            android:progressDrawable="@drawable/custom_progress"
+            app:layout_constraintLeft_toLeftOf="@id/Price1"
+            app:layout_constraintTop_toBottomOf="@+id/Price1" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvFlash2"
+        android:layout_width="135dp"
+        android:layout_height="180dp"
+        android:clickable="true"
+        app:layout_constraintLeft_toRightOf="@+id/cvFlash1"
+        app:layout_constraintTop_toBottomOf="@+id/flashSale">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/serum" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvDesc2"
+        android:layout_width="135dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="5dp"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="@+id/cvFlash2"
+        app:layout_constraintTop_toBottomOf="@+id/cvFlash2">
+
+        <TextView
+            android:id="@+id/Price2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Rp48.000"
+            android:textColor="#df5a26"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/Bar2"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:indeterminate="false"
+            android:progress="40"
+            android:progressDrawable="@drawable/custom_progress"
+            app:layout_constraintLeft_toLeftOf="@id/Price2"
+            app:layout_constraintTop_toBottomOf="@+id/Price2" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvFlash3"
+        android:layout_width="135dp"
+        android:layout_height="180dp"
+        android:clickable="true"
+        app:layout_constraintLeft_toRightOf="@+id/cvFlash2"
+        app:layout_constraintTop_toBottomOf="@+id/flashSale">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sepatu" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvDesc3"
+        android:layout_width="135dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="5dp"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="@+id/cvFlash3"
+        app:layout_constraintTop_toBottomOf="@+id/cvFlash3">
+
+        <TextView
+            android:id="@+id/Price3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Rp48.000"
+            android:textColor="#df5a26"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/Bar3"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:indeterminate="false"
+            android:progress="80"
+            android:progressDrawable="@drawable/custom_progress"
+            app:layout_constraintLeft_toLeftOf="@id/Price3"
+            app:layout_constraintTop_toBottomOf="@+id/Price3" />
+    </androidx.cardview.widget.CardView>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:itemIconTint="@drawable/selected2"
+        app:itemTextColor="@color/colorNavigationText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/navigation2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
